@@ -4,8 +4,8 @@ import android.content.Context;
 
 
 public class Session {
-    Session instance = null;
-    LocalSave localSave = null;
+    static Session instance = null;
+    static LocalSave localSave = null;
 
     private Context mContext;
 

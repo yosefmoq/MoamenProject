@@ -9,15 +9,16 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.yosefmoq.moamenprojecttest.MainActivity;
-import com.yosefmoq.moamenprojecttest.R;
-import com.yosefmoq.moamenprojecttest.models.User;
-import com.yosefmoq.moamenprojecttest.utils.Session;
-import com.yosefmoq.moamenprojecttest.utils.Validator;
+import com.yosefmoq.moamenproject.MainActivity;
+import com.yosefmoq.moamenproject.R;
+import com.yosefmoq.moamenproject.models.User;
+import com.yosefmoq.moamenproject.utils.Session;
+import com.yosefmoq.moamenproject.utils.Validator;
 
 import java.util.Objects;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
+
 
 public class SignupActivity extends AppCompatActivity {
         SweetAlertDialog sweetAlertDialog;
