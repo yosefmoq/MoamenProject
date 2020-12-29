@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "962538702079",
+    "project_id": "moamenproject-ab33b",
+    "storage_bucket": "moamenproject-ab33b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962538702079:android:f7282c3832bf497e0738ca",
+        "android_client_info": {
+          "package_name": "com.yosefmoq.moamenproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962538702079-5falv0umnpfbru4iu4gm4cahcdd7u1t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNhYPFPw-gWEpuSQ6XD6LSRWULFHQ0tNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962538702079-5falv0umnpfbru4iu4gm4cahcdd7u1t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
