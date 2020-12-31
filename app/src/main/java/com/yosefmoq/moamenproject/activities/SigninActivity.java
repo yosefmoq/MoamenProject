@@ -72,4 +72,23 @@ public class SigninActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void startActivity() {
+        String email = "";
+        String password = "";
+        firebaseFirestore.collection("users").whereEqualTo("email", email).whereEqualTo("password", password).limit(1).addSnapshotListener((value, error) -> {
+            if (value.getDocuments().size() > 0) {
+                User user = value.getDocuments().get(0).toObject(User.class);
+                Session.getInstance(this).getLocalSave().setUserInfo(user);
+                Session.getInstance(this).getLocalSave().setLoginAsGuest(true);
+                startActivity(new Intent(this, MainActivity.class));
+                finish();
+            } else {
+                Toast.makeText(this, "error in email or password", Toast.LENGTH_SHORT).show();
+            }
+        });    }
+
+    public void printErrorMessage(String errorMessage) {
+        Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
+    }
 }
