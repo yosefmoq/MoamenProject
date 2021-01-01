@@ -47,7 +47,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0';
     implementation 'pub.devrel:easypermissions:2.0.1'
     implementation 'com.squareup.picasso:picasso:2.71828'
-
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
     testImplementation "org.mockito:mockito-inline:3.6.28"
     implementation 'com.github.f0ris.sweetalert:library:1.6.2'
     implementation 'com.github.nguyenhoanglam:ImagePicker:1.4.3'
