@@ -1,4 +1,4 @@
-package com.yosefmoq.moamenproject.activities;
+package com.yosefmoq.moamenproject;
 
 
 import android.view.View;
@@ -11,6 +11,7 @@ import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.yosefmoq.moamenproject.R;
+import com.yosefmoq.moamenproject.activities.SplashActivity;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;

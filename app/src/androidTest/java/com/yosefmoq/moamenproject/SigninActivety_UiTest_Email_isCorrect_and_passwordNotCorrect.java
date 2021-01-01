@@ -1,4 +1,4 @@
-package com.yosefmoq.moamenproject.activities;
+package com.yosefmoq.moamenproject;
 
 
 import android.view.View;
@@ -11,6 +11,7 @@ import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.yosefmoq.moamenproject.R;
+import com.yosefmoq.moamenproject.activities.SplashActivity;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
@@ -30,7 +31,7 @@ import static org.hamcrest.Matchers.allOf;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class SigninActivety_UiTest_Email_isNotCorrect_and_passwordisCorrect {
+public class SigninActivety_UiTest_Email_isCorrect_and_passwordNotCorrect {
 
     @Rule
     public ActivityTestRule<SplashActivity> mActivityTestRule = new ActivityTestRule<>(SplashActivity.class);
@@ -45,7 +46,7 @@ public class SigninActivety_UiTest_Email_isNotCorrect_and_passwordisCorrect {
                                         0),
                                 0),
                         isDisplayed()));
-        appCompatEditText.perform(replaceText(""), closeSoftKeyboard());
+        appCompatEditText.perform(replaceText("hamza123@gmail.com"), closeSoftKeyboard());
 
         ViewInteraction appCompatEditText2 = onView(
                 allOf(withId(R.id.etPassword),
@@ -55,7 +56,7 @@ public class SigninActivety_UiTest_Email_isNotCorrect_and_passwordisCorrect {
                                         0),
                                 3),
                         isDisplayed()));
-        appCompatEditText2.perform(replaceText("123456789"), closeSoftKeyboard());
+        appCompatEditText2.perform(replaceText(""), closeSoftKeyboard());
 
         ViewInteraction appCompatButton = onView(
                 allOf(withId(R.id.btnLogin), withText("Signin"),

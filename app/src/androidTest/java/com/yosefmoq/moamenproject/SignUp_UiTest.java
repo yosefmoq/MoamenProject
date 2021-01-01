@@ -1,4 +1,4 @@
-package com.yosefmoq.moamenproject.activities;
+package com.yosefmoq.moamenproject;
 
 
 import androidx.test.espresso.DataInteraction;
@@ -21,6 +21,7 @@ import static androidx.test.espresso.assertion.ViewAssertions.*;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
 
 import com.yosefmoq.moamenproject.R;
+import com.yosefmoq.moamenproject.activities.SplashActivity;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
